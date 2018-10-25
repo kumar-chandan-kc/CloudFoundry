@@ -1,0 +1,14 @@
+ID: testpostgres
+_schema-version: '3.1'
+version: 0.0.1
+
+modules:
+ - name: postgresjava
+   type: java
+   path: postgresjava
+   parameters:
+      memory: 1024M
+   provides:
+    - name: postgresjava_api
+      properties:
+         url: ${default-url}

@@ -1,0 +1,15 @@
+---
+applications: 
+ - name: springjpaodata
+   memory: 768M
+
+   path: target/jpa-0.0.1-SNAPSHOT.war
+
+   buildpack: https://github.com/cloudfoundry/java-buildpack.git
+   # buildpack: https://github.com/hybris/java-jce-buildpack 
+
+   # env: 
+   #  JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
+
+   services:
+     - test_postgres
