@@ -191,3 +191,8 @@ HOW TO RUN MONGO DB LOCALLY
 
 open mongo db folder in command prompt.
 execute command mongod.exe --dbpath "C:\mongodb\data" 
+
+
+
+git checkout 'commit hash' filepath
+
